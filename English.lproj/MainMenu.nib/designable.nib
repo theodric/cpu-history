@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="144" id="145"/>
+                <outlet property="dockMenu" destination="302" id="309"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <menu title="MainMenu" systemMenu="main" id="29" userLabel="MainMenu">
+            <items>
+                <menuItem title="CPU History" id="269">
+                    <menu key="submenu" title="CPU History" systemMenu="apple" id="273">
+                        <items>
+                            <menuItem title="About CPU History" id="266">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="301"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="314">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Preferences..." keyEquivalent="," id="263">
+                                <connections>
+                                    <action selector="showPreferences:" target="144" id="282"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="274">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Services" id="272">
+                                <menu key="submenu" title="Services" systemMenu="services" id="271"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="270">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide CPU History" keyEquivalent="h" id="268">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="275"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" id="262">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="277"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="265">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="276"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="267">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit CPU History" keyEquivalent="q" id="264">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="278"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Help" id="284">
+                    <menu key="submenu" title="Help" id="286">
+                        <items>
+                            <menuItem title="Mac OS X CPU Info" keyEquivalent="?" id="285">
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="287"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <customObject id="144" userLabel="MainController" customClass="MainController"/>
+        <menu title="Menu" id="302" userLabel="DockMenu">
+            <items>
+                <menuItem title="About CPU History" id="303">
+                    <connections>
+                        <action selector="showAboutBox:" target="144" id="312"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Preferences…" id="304">
+                    <connections>
+                        <action selector="showPreferences:" target="144" id="307"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Help" id="305">
+                    <connections>
+                        <action selector="showHelp:" target="-2" id="308"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
