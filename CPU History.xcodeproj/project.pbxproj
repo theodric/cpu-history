@@ -372,7 +372,6 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = "CPU History";
 				SECTORDER_FLAGS = "";
-				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -402,7 +401,6 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = "CPU History";
 				SECTORDER_FLAGS = "";
-				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -429,7 +427,6 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = "CPU History";
 				SECTORDER_FLAGS = "";
-				VALID_ARCHS = x86_64;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
