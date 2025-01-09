@@ -4,7 +4,7 @@
  *	
  *	Formerly: Memory Monitor, by Bernhard Baehr
  *
- *	Copyright © 2001-2003 Bernhard Baehr
+ *	Copyright ï¿½ 2001-2003 Bernhard Baehr
  *
  *	Preferences.m - Preferences Controller Class
  *
@@ -39,8 +39,8 @@
 		[[NSColor blackColor] colorWithAlphaComponent:1.0], IDLE_COLOR_KEY,
 		
 		
-		[NSNumber numberWithInt:10], UPDATE_FREQUENCY_KEY,	/* unit is 1/10 second */
-		[NSNumber numberWithBool:YES], SHOW_GRAPH_WINDOW_KEY,
+		[NSNumber numberWithInt:7], UPDATE_FREQUENCY_KEY,	/* unit is 1/10 second */
+		[NSNumber numberWithBool:NO], SHOW_GRAPH_WINDOW_KEY,
 		[NSNumber numberWithBool:YES], GRAPH_WINDOW_ON_TOP_KEY,
 		[NSNumber numberWithInt:128], GRAPH_WINDOW_SIZE_KEY,
 		[NSNumber numberWithFloat:1.0], DOCK_ICON_SIZE_KEY,
@@ -52,13 +52,16 @@
 
 - (id)init
 {
-#define SCANCOLOR(key)	\
-	if ((obj = [defaults objectForKey:key])) { \
-		a = transparency; \
-		sscanf ([obj cString], "%f %f %f %f", &r, &g, &b, &a); \
-		obj = [NSColor colorWithCalibratedRed:r green:g blue:b alpha:a]; \
-		[currentSettings setObject:obj forKey:key]; \
-	}
+#define SCANCOLOR(key)    \
+    if ((obj = [defaults objectForKey:key])) { \
+        a = transparency; \
+        const char *cString = [obj cStringUsingEncoding:NSUTF8StringEncoding]; \
+        if (cString) { \
+            sscanf(cString, "%f %f %f %f", &r, &g, &b, &a); \
+            obj = [NSColor colorWithCalibratedRed:r green:g blue:b alpha:a]; \
+            [currentSettings setObject:obj forKey:key]; \
+        } \
+    }
 #define GETNUMBER(key)	\
 	if ((obj = [defaults objectForKey:key])) \
 		[currentSettings setObject:obj forKey:key];
@@ -154,7 +157,7 @@
 }
 
 
-- (void)savePreferences
+/*- (void)savePreferences
 {
 	id		obj;
 	float		r, g, b, a;
@@ -173,7 +176,7 @@
 		}
 		[defaults setObject:obj forKey:key];
 	}
-}
+}*/
 
 
 - (id)objectForKey:(id)key

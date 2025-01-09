@@ -4,7 +4,7 @@
  *	
  *	Formerly: Memory Monitor, by Bernhard Baehr
  *
- *	Copyright © 2001-2003 Bernhard Baehr
+ *	Copyright ï¿½ 2001-2003 Bernhard Baehr
  *
  *	Preferences.h - Preferences Controller Class
  *
