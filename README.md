@@ -26,3 +26,4 @@ What works?
 What's busted?
 - Saving preferences is entirely disabled because it kept corrupting itself
 - 50+ deprecation warnings etc. inside Xcode-- but nothing that stops it from building and running!
+
