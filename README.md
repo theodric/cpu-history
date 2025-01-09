@@ -1,6 +1,6 @@
 # CPU History
 
-This is a fork of [Christopher Bowns](https://cbowns.com/cpuhistory/)' excellent CPU History application, last updated by him back in June 2008.
+This is a fork of [Christopher Bowns](https://cbowns.com/cpuhistory/)' excellent CPU History application, last updated by him back in June 2008, and adopted by me in 2019.
 
 ![miniscreenshot](miniscreenshot.png)
 
