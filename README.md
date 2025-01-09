@@ -8,7 +8,7 @@ Here is his original summary of the program, cribbed from the above site:
 
 >**What is CPU History?**
 >
->CPU History is an application that graphs your current CPU usage history in the Dock icon, ~~and optionally, in a floating window~~. You can customize colors, update frequency, and bar thickness.
+>CPU History is an application that graphs your current CPU usage history in the Dock icon, ~~and optionally, in a floating window. You can customize colors, update frequency, and bar thickness.~~
 >
 >It uses very little CPU to monitor your CPU usage. I think this is a good thing. 
 
