@@ -30,4 +30,5 @@ What's busted?
 - 50+ deprecation warnings etc. inside Xcode-- but nothing that stops it from building and running!
 
 I provide a binary here that probably won't work for you because I refuse to pay Apple €99/year for a dev account so they can sign binaries I'm giving away for free to 0 interested people.  
+
 More than likely you'll need to clone this repo, then open the source/CPU History.xcodeproj file in Xcode, and build the project (navigate to Product -> Build, or mash ⌘ + B). As long as it builds, you can just ignore all the warnings. The compiled application will be in `/Users/YOURUSERNAME/Library/Developer/Xcode/DerivedData/CPU_History-somethingsomethingsomething/Build/Products/Development/CPU History.app`. Move it to `/Applications` and run it. 
