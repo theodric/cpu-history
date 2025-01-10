@@ -9,6 +9,7 @@
 //  Copyright 2006 Peter Hosey. All rights reserved.
 //
 //  Modified by Christopher Bowns, starting 2008-1-1.
+//  Modified by Theodric, starting 2019-09-13
 
 // #ifndef NSLOG_DEBUG
 // #define NSLOG_DEBUG

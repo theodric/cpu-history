@@ -156,7 +156,8 @@
 	[[NSNotificationCenter defaultCenter] postNotificationName:PREFERENCES_CHANGED object:nil];
 }
 
-
+// Saving of preferences has been disabled due to a bug on newer macOSes. I set the defaults to what I want the program to do.
+// TODO: figure out why saving preferences fucks up preferences with the changes I made to get this to build on 64-bit macOS!
 /*- (void)savePreferences
 {
 	id		obj;

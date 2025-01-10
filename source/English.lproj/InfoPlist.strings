@@ -1,4 +1,5 @@
 CFBundleName = "CPU History";
 CFBundleDisplayName = "CPU History";
-NSHumanReadableCopyright = "Copyright © 2008 Christopher Bowns";
+NSHumanReadableCopyright = "This fork maintained by Theodric, 2019 - present
+Original program ©2008 Christopher Bowns";
 CFBundleHelpBookName = "CPU History Help";
