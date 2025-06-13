@@ -1,6 +1,6 @@
 # CPU History
 
-This is a fork of [Christopher Bowns](https://cbowns.com/cpuhistory/)' excellent CPU History application, last updated by him back in June 2008, and adopted by me in 2019.
+This is a fork of [Christopher Bowns](https://cbowns.com/cpuhistory/)' excellent CPU History application, last updated by him back in June 2008, and summarily adopted by me in 2019.
 
 ![miniscreenshot](miniscreenshot.png)
 
@@ -20,7 +20,7 @@ I massaged it until it would run on a 64-bit-clean x86_64 macOS, and thereafter 
 Because I am **NOT! A! DEVELOPER!** my changes are ham-fisted, inelegant, idiotic, and minimal. As long as the program builds and runs on my computer, I consider it good enough. 
 
 What works?
-- Builds and runs on macOS 15.2 'Sequoia' build 24C101
+- Builds and runs on macOS 26.0 Beta 'Tahoe' (build 25A5279m)
 - Works natively on both Apple Silicon and x86_64
 - Employs sensible default settings
 - Starts 3+ times in a row without breaking
